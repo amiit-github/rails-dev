@@ -51,3 +51,4 @@ RUN $HOME/.rbenv/bin/rbenv global ${RUBY_VER}
 ENV PATH /root/.rbenv/shims:$PATH
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 RUN gem install bundler
+WORKDIR /home
